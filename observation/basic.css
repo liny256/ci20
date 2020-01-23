@@ -1,0 +1,331 @@
+.container{
+
+}
+a{
+  color:white;
+}
+a:hover{
+  font-size: 22px;
+}
+body{
+  font-family: 'Muli', sans-serif;
+  background-color: #8b8b8b;
+}
+
+h1{
+  font-size: 70px;
+}
+.left{
+  position: absolute;
+  left:10%;
+  top:32vh;
+}
+.head1{
+  position: absolute;
+  width: 80vw;
+  height:40px;
+}
+#combination-lock{
+
+}
+/* .big-title-showup{
+  animation-name: bigtitle-showup;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes  bigtitle-showup{
+  from{
+    height:-400px;
+  }
+  to{
+    height
+  }
+} */
+.nevi{
+  position: absolute;
+  font-size: 14px;
+  color:white;
+}
+#index-next{
+  top:350%;
+}
+/* page 1 navigations */
+#page1-scroll1{
+  position: absolute;
+  top:100px;
+}
+#page1-scroll2{
+  position: absolute;
+  top:100px;
+}
+
+#page1-next{
+  position: absolute;
+  top:140px;
+}
+
+/* page 2 navigations */
+#page2-scroll1{
+  position: absolute;
+  top:100px;
+}
+#page2-scroll2{
+  position: absolute;
+  top:140px;
+}
+
+#page2-next{
+  position: absolute;
+  top:140px;
+}
+
+/* page 3 navigations */
+#page3-scroll1{
+  position: absolute;
+  top:200px;
+}
+#page3-scroll2{
+  position: absolute;
+  top:90px;
+}
+
+#page3-scroll3{
+  position: absolute;
+  top:90px;
+}
+#page3-scroll4{
+  position: absolute;
+  top:100px;
+}
+#page3-scroll5{
+  position: absolute;
+  top:90px;
+}
+#page3-back{
+  position: absolute;
+  top:140px;
+}
+
+
+.right{
+  position: absolute;
+  right:0px;
+  z-index: -1;
+  width:600px;
+  height:914px;
+  top:-200px;
+  display: block;
+  overflow: hidden;
+}
+#lock-no-background{
+  width:150%;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left:-20px;
+}
+
+.dot{
+  background-color: rgba(255, 255, 255, 0.66);
+  position: absolute;
+
+}
+
+.dot-group{
+  top:600px;
+  left:910px;
+  position: absolute;
+}
+#big-dot-bot{
+  width:65px;
+  height:65px;
+  border-radius: 50%;
+  top:55px;
+  left:15px;
+}
+#big-dot-top{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  top:-55px;
+  left:-2px
+}
+#mid-dot-bot{
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  top:-160px;
+  left:25px;
+}
+#mid-dot-top{
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  top:-240px;
+  left:85px;
+}
+
+
+.image{
+  position: absolute;
+  width:400px;
+  height:300px;
+  display: block;
+  overflow: hidden;
+  left: 740px;
+  top:-70px;
+  /* border:red solid 3px; */
+}
+
+/* page 1 images */
+#muslim-design{
+ position: absolute;
+ width:100%;
+ top:25px;
+}
+#john-patent{
+  position: absolute;
+  width:100%;
+  left:0px;
+  top:-75px;
+}
+
+/* page 2 images */
+#lock4{
+  position: absolute;
+  width:100%;
+  top:-130px;
+  left:0px;
+}
+#electronic-lock{
+  position: absolute;
+  width:100%;
+  left:0px;
+  top:-45px;
+}
+
+/* page 3 images */
+/* outside */
+#front-o{
+  top:-200px;
+}
+#back-o{
+  top:150px;
+}
+/* inside */
+#front{
+  position: absolute;
+  width:100%;
+  top:-130px;
+  left:0px;
+}
+#back{
+  position: absolute;
+  width:120%;
+  top:0px;
+  left:0px;
+}
+
+/* page 3 gifs */
+.gifs{
+  position: absolute;
+  width:200px;
+  height:350px;
+  display: block;
+  overflow: hidden;
+  left: 740px;
+  top:-70px;
+  /* border:red solid 3px; */
+}
+#step1{
+  position: absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+#step2{
+  position: absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+#step3{
+  position: absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+#step4{
+  position: absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+#step5{
+  position: absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+}
+.caption{
+  position: absolute;
+  width:600px;
+}
+/* page 3 caption position */
+#caption1{
+  top:50px;
+  position: absolute;
+}
+
+.section1{
+  position:absolute;
+  left:100px;
+  top:300px;
+}
+
+.section2{
+  position: absolute;
+  top:800px;
+  left:100px;
+}
+
+.section3{
+  position:absolute;
+  top:1400px;
+  left:100px;
+}
+/* page 2 bottom padding */
+#page2-padding-bot{
+  padding-bottom: 400px;
+}
+/* page 1 bottom padding */
+#page1-padding-bot{
+  padding-bottom: 400px;
+}
+.section4{
+  position:absolute;
+  top:2200px;
+  left:100px;
+}
+.section5{
+  position:absolute;
+  top:2800px;
+  left:100px;
+}
+.section6{
+  position: absolute;
+  top:3400px;
+  left:100px;
+  padding-bottom: 500px;
+}
+/* page 3 section position */
+#section1{
+top:230px;
+}
+#section2{
+top:1000px;
+}
+#section3{
+  top:1600px;
+}
