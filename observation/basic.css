@@ -20,15 +20,15 @@ h1{
   left:10%;
   top:32vh;
 }
-.head1{
+
+#combination-lock{
   position: absolute;
   width: 80vw;
   height:40px;
+  top:-50px;
+  color:rgba(255, 255, 255, 0);
 }
-#combination-lock{
-
-}
-/* .big-title-showup{
+.big-title-showup{
   animation-name: bigtitle-showup;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -36,20 +36,63 @@ h1{
 }
 @keyframes  bigtitle-showup{
   from{
-    height:-400px;
+    top:-50px;
+    color:rgba(255, 255, 255, 0);
   }
   to{
-    height
+    top:0px;
+    color:black;
   }
-} */
+}
+
+#system-documentation{
+  position:absolute;
+  top:-50px;
+  color:rgba(255, 255, 255, 0);
+  width:80vw;
+}
+.sub-title-showup{
+  animation-name: subtitle-showup;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes subtitle-showup {
+  from{
+    top:-50px;
+    color:rgba(255, 255, 255, 0);
+  }
+  to{
+    top:0px;
+    color:black;
+  }
+}
 .nevi{
   position: absolute;
   font-size: 14px;
   color:white;
 }
 #index-next{
-  top:350%;
+  top:350px;
+  /* color:rgba(255, 255, 255, 0)!important; */
 }
+/* .next-goes-up{
+  animation-name: next-showup;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes next-showup {
+  from{
+    top:350px;
+    color:rgba(255, 255, 255, 0)!important;
+  }
+  to{
+    top:300px;
+    color:white;
+  }
+} */
 /* page 1 navigations */
 #page1-scroll1{
   position: absolute;
