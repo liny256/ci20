@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title></title>
+    <style media="screen">
+      html,body{
+        height:100%;
+        margin:0;
+      }
+      body{
+        display:flex;
+        flex-direction: row;
+      }
+      div{
+        flex:1;
+      }
+      /* flex 1 : give me the property of the div container
+      flex 2 and flex one is ration 2:1
+      flex 1 also makes the default height of a div to fill up*/
+      div:nth-of-type(even){
+        background-color:sienna;
+      }
+      /*"()"target, 10n 3n+1....*/
+      div:nth-of-type(odd){
+        background-color:chocolate;
+      }
+      @media (min-width:1000px) {
+        
+      }
+      @media (max-width:700px) {
+         /*more css goes here, if the above statement is true, it will
+         apply these styles
+         css eg. color:initial;
+         initial reset the style to defaut*/
+         body{
+             flex-direction: column;
+         }
+      }
+      @media (hover: none) {
+        /* mobile screen will never see hover
+         whenever the device is no way of hovering,
+         it targets mobile devices*/
+         div:nth-of-type(even){
+           background-color:linen;
+         }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+    <div class="">
+
+    </div>
+
+  </body>
+</html>

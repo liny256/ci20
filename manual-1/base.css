@@ -1,0 +1,174 @@
+html,body{
+  width:100%;
+  height:100%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+h1{
+  font-size: 100px;
+  font-weight: 600;
+  text-align:  center;
+}
+h2{
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+#gap{
+  margin-top: 10%;
+}
+.container-top{
+  width:100%;
+  height:100%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.container-bottom{
+  width:100%;
+  height:100%;
+}
+
+.hori-box{
+  height: 30%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.number-odd{
+  display: flex;
+  float:right;
+  font-size: 180px;
+  font-weight: 700;
+  width:30%;
+  margin-left:0px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.number-even{
+    display: flex;
+  float:left;
+  font-size: 180px;
+  font-weight: 700;
+  width:30%;
+  margin-right:0px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.text-zero{
+  display: flex;
+  flex-direction: column;
+  float:right;
+  width:65%;
+  font-size: 18px;
+  align-content: center;
+  align-items: center;
+}
+.text-even{
+  display: flex;
+  float:right;
+  width:65%;
+  font-size: 18px;
+  align-content: center;
+  align-items: center;
+}
+
+.text-odd{
+  display: flex;
+  float:left;
+  width:65%;
+  text-align: left;
+  box-sizing:border-box;
+  font-size: 18px;
+  align-items: center;
+  align-content: center;
+}
+
+@media (hover:none) {
+  body{
+    height:50%;
+  }
+  .container-top{
+    width:100%;
+    height:100%;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+  .hori-box{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  float: none;
+  margin-bottom: 20%;
+}
+.number-odd{
+  display: flex;
+  float:none;
+  font-size: 180px;
+  font-weight: 700;
+  width:30%;
+  margin-left:30%;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.number-even{
+  display: flex;
+  float:none;
+  font-size: 180px;
+  font-weight: 700;
+  width:30%;
+  margin-left:40%;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.text-even{
+  display: flex;
+  float:none;
+  width:50%;
+  font-size: 20px;
+  margin-left: 20%;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text-zero{
+  display: flex;
+  flex-direction: column;
+  float:none;
+  width:50%;
+  font-size: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+    margin-left:20%;
+    flex-direction: column-reverse;
+}
+
+.text-odd{
+  display: flex;
+  float:left;
+  width:50%;
+  text-align: left;
+  box-sizing:border-box;
+  font-size: 20px;
+  margin-left: 20%;
+  align-items: center;
+  align-content: center;
+    justify-content: flex-start;
+}
+div:nth-of-type(even){
+  flex-direction: column-reverse;
+}
+}
