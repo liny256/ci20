@@ -257,3 +257,22 @@ six.addEventListener("mouseout",NoRotate7);
 function NoRotate7(){
   six.classList.remove("rotate-clock");
 }
+
+
+//randomizing postions of random divs that appears in the beginning
+// function getRandomPosition(element) {
+//  var x = document.body.offsetHeight-element.clientHeight;
+//  var y = document.body.offsetWidth-element.clientWidth;
+//  var randomX = Math.floor(Math.random()*x);
+//  var randomY = Math.floor(Math.random()*y);
+//  return [randomX,randomY];
+// }
+// window.onload = function() {
+//  var rec = document.createElement('div');
+//  rec.setAttribute("style", "position:absolute;");
+//  rec.setAttribute("style","background-color:black;");
+//  document.body.appendChild(rec);
+//  var xy = getRandomPosition(rec);
+//  rec.style.top = xy[0] + 'px';
+//  rec.style.left = xy[2] + 'px';
+// }
