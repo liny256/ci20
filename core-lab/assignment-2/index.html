@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cafe Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <style>
+    html,body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Playfair Display', serif;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 100px;
+      color: #9f8d5c;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 60px;
+      color: #9f8d5c;
+    }
+   h3{
+     font-weight: 600;
+     font-style: italic;
+     font-size: 20px;
+     color: #9f8d5c;
+     margin-top: 0px;
+     margin-bottom: 5%;
+     box-sizing: border-box;
+   }
+    p {
+      font-weight: 400;
+      font-size: 30px;
+      color: #9f8d5c;
+    }
+
+    .container-top {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: center;
+      border-bottom: 2px #9f8d5c dashed;
+    }
+
+    .container-middle {
+      display: flex;
+      flex-direction: row;
+      flex: 2;
+    }
+
+    div {
+      flex: 1;
+    }
+
+    .right-c {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background-color: white;
+      padding-bottom: 5%;
+      box-sizing: border-box;
+    }
+
+    .left-c {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      background-color: beige;
+      padding-bottom: 10%;
+      box-sizing: border-box;
+    }
+
+    .one-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      width: 50%;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+      margin-right: 10%;
+    }
+
+    .group-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (hover: none) {
+      .container-middle{
+        flex-direction: column;
+        flex:5;
+      }
+      .container-top{
+        flex:1;
+      }
+      .left-c{
+        flex:2;
+      }
+      .right-c{
+        flex:2;
+      }
+    }
+    @media (max-width:700px)  {
+      .container-top{
+        flex:1;
+      }
+      .left-c{
+        flex:2;
+      }
+      .right-c{
+        flex:2;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-top">
+    <h1>Cafe Walker</h1>
+    <h3>76 West Bleeker St, New York</h3>
+  </div>
+  <div class="container-middle">
+    <div class="left-c">
+      <div class="group-name">
+        <h2>Coffee</h2>
+      </div>
+      <div class="one-row">
+        <div class="items">
+          <p>Expresso</p>
+        </div>
+        <div class="price">
+          <p>$2</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Latte</p>
+        </div>
+        <div class="price">
+          <p>$5</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Cappucino</p>
+        </div>
+        <div class="price">
+          <p>$4</p>
+        </div>
+      </div>
+
+
+      <div class="one-row">
+        <div class="items">
+          <p>Mochaccino</p>
+        </div>
+        <div class="price">
+          <p>$5</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Macchiato</p>
+        </div>
+        <div class="price">
+          <p>$4</p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="right-c">
+      <div class="group-name">
+        <h2>Tea</h2>
+      </div>
+      <div class="one-row">
+        <div class="items">
+          <p>Black Tea</p>
+        </div>
+        <div class="price">
+          <p>$3</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Earl Grey</p>
+        </div>
+        <div class="price">
+          <p>$3</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Ginger Tea</p>
+        </div>
+        <div class="price">
+          <p>$3</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Peppermint Tea</p>
+        </div>
+        <div class="price">
+          <p>$2</p>
+        </div>
+      </div>
+
+      <div class="one-row">
+        <div class="items">
+          <p>Fruit Tea</p>
+        </div>
+        <div class="price">
+          <p>$2</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
