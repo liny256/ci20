@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <title></title>
+<script>
+  //why do we need arrays
+
+  var fruit1="apple";
+  var secondfruit="kiwi";
+  var thirdfruit="durian";
+
+//this is a container
+  var fruits=["apple","kiwi","durian"];
+  console.log(fruits);
+//it's like the order of book and its page numbers
+
+//to get a variable out of an array, we use "page numbers" or array indices(index in pl is indices)
+console.log(fruits[1]);
+//computers start counting from zero, page number starts from zero
+
+//how do we modify an array?
+fruits[2]="lemon";
+//the big catagory is still durian but inside it is changed to lemon
+
+//add a new item to the array
+fruits[3]="durian";
+
+//helpful tool for adding to an array
+fruit.push("coconut","papaya");
+//you do not have to remember the last number of the array
+
+//create an empty array
+var array=[];
+array.push("hello");
+array.push(53);
+console.log(array);
+//we can put different kinds of stuff in an array
+
+var innerArray=["a","b","c"];
+array.push(innerArray);
+console.log(array[2][1]);
+//first []is the first level, []defines the second element in the inside array
+
+var complex= ["one",13,["prince"，"prints","prence"]];
+console.log(complex);
+
+var getTheInsidearray = complex[2];
+console.log(getTheInsidearray);
+console.log(getTheInsidearray[0]);
+console.log(complex[2][0]);
+//pop is the opposite of push, pulling sth of an array
+
+
+</script>
+</html>

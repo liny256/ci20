@@ -1,0 +1,123 @@
+
+html{
+  width:100%;
+  height:100%;
+}
+body {
+  font-family: 'Futura', sans-serif;
+  font-size: 72px;
+  line-height: 1em;
+  font-weight: 400;
+  color: rgb(255, 36, 121);
+  /* background-image: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(247,102,82,1) 35%, rgba(70,145,223,1) 90%, rgba(255,255,255,1) 100%); */
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+height:100%;
+width:100%;
+overflow: hidden;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+#cursor {
+  animation: blinker 1s step-end infinite;
+  /*you can change 'step-end' to 'linear' for smooth transition*/
+  font-family: 'Exo 2', sans-serif;
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0);
+  width: calc(100% - 100px);
+  padding: 50px;
+  margin: 50px auto;
+  word-wrap: break-word;
+  text-align: center;
+  position: absolute;
+  top:40%;
+}
+
+/* Jelly styles */
+
+.jelly-container {
+position: relative;
+  left: 10%;
+  top:1000px;
+}
+
+.jelly-container, .jelly-canvas1, .jelly-canvas2, .jelly-canvas3, .jelly-canvas4 {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+.float-up{
+  animation-name: float-up;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes float-up {
+  from{
+   top:1000px;
+  }
+  to{
+    top:0px;
+  }
+}
+#jellyc1{
+    margin-left: -100px;
+}
+#jellyc2{
+ margin-left: 500px;
+}
+#jellyc3{
+ margin-left:800px;
+}
+#jellyc4{
+  margin-left: 1000px;
+}
+#jellycan{}
+#irregular1{}
+#irregular2{}
+#irregular3{}
+#irregular4{}
+#gradient{
+
+}
+
+/* It's important to position the `.centroid-container` in the top-left corner
+   This way the `.centroid-text` will be positioned in the center (with JavaScript) */
+   .centroid-container {
+     position: absolute;
+     left: 0;
+     top: 0;
+     -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
+     pointer-events: none;
+   }
+.centroid-text {
+  font-size: 100px;
+  color: white;
+}
+.cls-1{
+  fill:none;
+  stroke:#000;
+  stroke-miterlimit:10;
+  display: none;
+  width:30%;
+  position: absolute;
+    left:-100px;
+}
+.cls-2{
+  fill:none;
+  stroke:#000;
+  stroke-miterlimit:10;
+  display: none;
+  width:10%;
+  left:100px;
+  position: absolute;
+}
