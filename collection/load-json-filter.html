@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+  //for fetch to work, we need a server
+    fetch("data.json")
+     .then(function(blob){return blob.json();})
+     .then(function(json){buildPage();});
+
+     function buildPage(data){
+       console.log(data);
+       for (var i=0;i<data.length;i=i+1){
+         console.log(data[i]);
+       }
+       //filter is asking a true or false to filter
+       //for each item we generate a true or false statement
+       //"entry" is an object
+       //entry is each object inside the data
+       var breakfast=data.filter(function(entry){return entry.Type=="BREAKFAST";});
+       //match entry type name with your catagories, (Type is a catagory, breakfast is a subcatagory, both have to match)
+       console.log(breakfast);
+       //data is unaffected, breakfast is a copy.
+
+       var blues=data.filter(function(entry){return entry.Colors.includes("blue")});
+      //filter things contain blue as a part
+     }
+  </script>
+</html>
