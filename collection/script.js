@@ -32,16 +32,15 @@ function buildIndex(data){
   for (i = 0; i < data.length; i++){
     var item = document.createElement("li");
     item.classList.add('items');
-    // item.classList.add(data[i].Name);
-    // item.classList.add(data[i].color);
+
 
     var elem = document.createElement("a");
-    // elem.innerText = data[i].name;
-    // elem.style.color = data[i].color;
     elem.href = "item.html?id=" + i;
-    var images =document.createElement("img");
-    images.src = data[i].img;
-    elem.appendChild(images);
+
+    var image=document.createElement("img");
+    image.src= data[i].img;
+    elem.appendChild(image);
+     // elem.src = "url.jpg";
 
     item.appendChild(elem);
     //finally, attach to '.result' div
