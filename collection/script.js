@@ -30,9 +30,8 @@ xmlhttp.send();
 function buildIndex(data){
   //for each row of data:
   for (i = 0; i < data.length; i++){
-    var item = document.createElement("li");
-    item.classList.add('items');
-
+    var box=document.createElement("div");
+    box.classList.add('box-left');
 
     var elem = document.createElement("a");
     elem.href = "item.html?id=" + i;
@@ -40,11 +39,50 @@ function buildIndex(data){
     var image=document.createElement("img");
     image.src= data[i].img;
     elem.appendChild(image);
-     // elem.src = "url.jpg";
+    box.appendChild(elem);
 
-    item.appendChild(elem);
+
+     // elem.src = "url.jpg";
     //finally, attach to '.result' div
-    document.querySelector('.result').appendChild(item);
+    document.querySelector('.result').appendChild(box);
+    // image.style.width='100%';
+    image.style.maxWidth="500px";
+    image.style.maxHeight="500px";
+    document.querySelector('#index').style.overflow="scroll";
+
+    document.addEventListener("scroll",BgColor);
+    function BgColor(){
+      document.querySelector('body').classList.add('background-change');
+    }
+
+
+    document.querySelector('html').style.width="300%";
+
+    //array sort part
+    var NameAZ=document.querySelector('#names');
+    NameAZ.addEventListener('click',AtoZ);
+    console.log(NameAZ);
+    function AtoZ(){
+      console.log('names');
+        data.sort(function(a, b) {
+          return (a.Name > b.Name) ? 1 : -1;
+        })
+    }
+
+
+    var heightR=document.querySelector('#height');
+    heightR.addEventListener('click',SmalltoBig);
+    function SmalltoBig(){
+      console.log('height');
+      data.sort(function(a, b) {
+        return (a.HeightMeter > b.HeightMeter) ? 1 : -1;
+      })
+    }
+
+    //try to rap a div around several elements so i can range them
+    // for(i=0;i<data.length;i++){
+    //
+    // }
   }
 }
 
@@ -55,6 +93,7 @@ function buildItem(data){
   var id = parseInt(urlParams.get('id'));
   console.log('currently seeing item ' + id);
 
+  document.querySelector('title').innerText = data[id].Name;
   document.querySelector('h1').innerText = data[id].Number;
   document.querySelector('.name').innerText = data[id].Name;
   document.querySelector('.lifespan').innerText = "Average Lifespan: "+ data[id].AverageLifeSpan;
@@ -62,6 +101,24 @@ function buildItem(data){
   document.querySelector('.light').innerText = "Light: "+ data[id].Sunshine;
   document.querySelector('.temperature').innerText = "Temperature: "+ data[id].Temperature;
   document.querySelector('.height').innerText = "Height(m): "+data[id].HeightMeter;
+
+  var picture=document.querySelector('.image');
+  var actualPic=document.createElement('img');
+  actualPic.src=data[id].img;
+  picture.appendChild(actualPic);
+  actualPic.style.maxWidth='450px';
+  actualPic.style.maxHeight='450px';
+  actualPic.style.display='block';
+  actualPic.style.zIndex='-999';
+  picture.style.display='block';
+  picture.style.zIndex='-999';
+
+  if(id>9){
+    document.querySelector('h1').style.left="10%";
+  }
+  if(id<10){
+    document.querySelector('h1').style.left="15%";
+  }
 
   var nextId, prevId;
   if (id == data.length - 1) {
@@ -79,22 +136,4 @@ function buildItem(data){
   }
   document.querySelector('.next').href = "item.html?id=" + nextId;
   document.querySelector('.prev').href = "item.html?id=" + prevId;
-}
-
-function show(target){
-  var items = document.querySelectorAll('.items');
-  for (i = 0; i < items.length; i++){
-    items[i].style.display = "none";
-  }
-  var selected = document.querySelectorAll(target);
-  for (i = 0; i < selected.length; i++){
-    selected[i].style.display = "inline-block";
-  }
-  var filters = document.querySelectorAll('.filters');
-  for (i = 0; i < filters.length; i++){
-    filters[i].classList.remove('selected');
-  }
-  if (target !== ".items"){
-    event.target.classList.add('selected');
-  }
 }

@@ -12,6 +12,7 @@ body {
   width:100%;
   height:100%;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -19,22 +20,63 @@ a {
 a:hover {
   opacity: 0.5;
 }
+
 li {
   list-style-type: none;
   display: inline-block;
 	margin: 0.25em;
 }
+
 .navi{
   color:white;
   font-size:36px;
   display:flex;
   flex-flow: row;
+  cursor: pointer;
 }
 .small-icons{
   margin-right: 2%;
   margin-top: 20px;
   margin-bottom: 0;
 }
+
+.box-left{
+  width:100%;
+  display: flex;
+  max-height: 300px;
+  margin-right:1%;
+}
+/* .box-center{
+  width:30%;
+  display: flex;
+}
+.box-right{
+  width:30%;
+  display: flex;
+} */
+.result{
+  display: flex;
+  flex-direction: row;
+  top:40%;
+  position: absolute;
+  width:200%;
+}
+
+.background-change{
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+@keyframes color-change {
+  from{background-color:#999999; }
+  to{background-color: #C6A88B;}
+}
+
+
+
+
 
 /*.items {
   display: none;
@@ -45,8 +87,14 @@ li {
 }
 
 h1{
-  font-size: 120px;
+  font-size: 150px;
   font-weight: bold;
+  margin-bottom: -40%;
+  margin-top: 0;
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  /* left:10%; */
 }
 
 .name{
@@ -68,14 +116,6 @@ h1{
 .right{
   margin-left: 25px;
 }
-
-.top{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .bottomcon{
   display: flex;
   flex-direction: row;
@@ -83,4 +123,11 @@ h1{
   align-items: center;
   width:100%;
   height:100%;
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
